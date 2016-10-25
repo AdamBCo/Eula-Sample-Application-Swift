@@ -9,19 +9,34 @@
 /* Begin PBXBuildFile section */
 		87210B6F1D8AE15800809345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87210B6E1D8AE15800809345 /* AppDelegate.swift */; };
 		87210B711D8AE15800809345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87210B701D8AE15800809345 /* ViewController.swift */; };
-		87210B741D8AE15800809345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87210B721D8AE15800809345 /* Main.storyboard */; };
 		87210B761D8AE15800809345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87210B751D8AE15800809345 /* Assets.xcassets */; };
 		87210B791D8AE15800809345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87210B771D8AE15800809345 /* LaunchScreen.storyboard */; };
+		95E3F9C37E532D73AC4AE3EB /* Pods_Eula_Sample_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842000C6EC2D89D6454761D4 /* Pods_Eula_Sample_Application.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		87210B861D8AE7FC00809345 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		842000C6EC2D89D6454761D4 /* Pods_Eula_Sample_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eula_Sample_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87210B6B1D8AE15800809345 /* Eula-Sample-Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eula-Sample-Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87210B6E1D8AE15800809345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87210B701D8AE15800809345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		87210B731D8AE15800809345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87210B751D8AE15800809345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87210B781D8AE15800809345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87210B7A1D8AE15800809345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E67D3B1EBBCF8F1D9AFB567 /* Pods-Eula-Sample-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eula-Sample-Application.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eula-Sample-Application/Pods-Eula-Sample-Application.release.xcconfig"; sourceTree = "<group>"; };
+		DD60B885268CD81704C1F588 /* Pods-Eula-Sample-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eula-Sample-Application.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eula-Sample-Application/Pods-Eula-Sample-Application.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +44,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E3F9C37E532D73AC4AE3EB /* Pods_Eula_Sample_Application.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C41D7C7E272682F1A01C3A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842000C6EC2D89D6454761D4 /* Pods_Eula_Sample_Application.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87210B621D8AE15800809345 = {
 			isa = PBXGroup;
 			children = (
 				87210B6D1D8AE15800809345 /* Eula-Sample-Application */,
 				87210B6C1D8AE15800809345 /* Products */,
+				FD1AC04CBDEFC911B10D8853 /* Pods */,
+				7C41D7C7E272682F1A01C3A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +82,20 @@
 			children = (
 				87210B6E1D8AE15800809345 /* AppDelegate.swift */,
 				87210B701D8AE15800809345 /* ViewController.swift */,
-				87210B721D8AE15800809345 /* Main.storyboard */,
 				87210B751D8AE15800809345 /* Assets.xcassets */,
 				87210B771D8AE15800809345 /* LaunchScreen.storyboard */,
 				87210B7A1D8AE15800809345 /* Info.plist */,
 			);
 			path = "Eula-Sample-Application";
+			sourceTree = "<group>";
+		};
+		FD1AC04CBDEFC911B10D8853 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD60B885268CD81704C1F588 /* Pods-Eula-Sample-Application.debug.xcconfig */,
+				9E67D3B1EBBCF8F1D9AFB567 /* Pods-Eula-Sample-Application.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +105,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87210B7D1D8AE15800809345 /* Build configuration list for PBXNativeTarget "Eula-Sample-Application" */;
 			buildPhases = (
+				0D85B94049C52CA5549CE1F4 /* [CP] Check Pods Manifest.lock */,
 				87210B671D8AE15800809345 /* Sources */,
 				87210B681D8AE15800809345 /* Frameworks */,
 				87210B691D8AE15800809345 /* Resources */,
+				87210B861D8AE7FC00809345 /* Embed Frameworks */,
+				7E12A44FB09CDC7BC4AC6379 /* [CP] Embed Pods Frameworks */,
+				5455D2B42FE3ACEBA20C78DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +134,7 @@
 				TargetAttributes = {
 					87210B6A1D8AE15800809345 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UT4Y62N2LT;
+						DevelopmentTeam = BX26UVAP54;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,11 +164,58 @@
 			files = (
 				87210B791D8AE15800809345 /* LaunchScreen.storyboard in Resources */,
 				87210B761D8AE15800809345 /* Assets.xcassets in Resources */,
-				87210B741D8AE15800809345 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D85B94049C52CA5549CE1F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5455D2B42FE3ACEBA20C78DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eula-Sample-Application/Pods-Eula-Sample-Application-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E12A44FB09CDC7BC4AC6379 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eula-Sample-Application/Pods-Eula-Sample-Application-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87210B671D8AE15800809345 /* Sources */ = {
@@ -145,14 +230,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		87210B721D8AE15800809345 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87210B731D8AE15800809345 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		87210B771D8AE15800809345 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,9 +336,14 @@
 		};
 		87210B7E1D8AE15800809345 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD60B885268CD81704C1F588 /* Pods-Eula-Sample-Application.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UT4Y62N2LT;
+				DEVELOPMENT_TEAM = BX26UVAP54;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Eula-Sample-Application",
+				);
 				INFOPLIST_FILE = "Eula-Sample-Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adamCooper.Eula-Sample-Application";
@@ -272,9 +354,14 @@
 		};
 		87210B7F1D8AE15800809345 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E67D3B1EBBCF8F1D9AFB567 /* Pods-Eula-Sample-Application.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UT4Y62N2LT;
+				DEVELOPMENT_TEAM = BX26UVAP54;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Eula-Sample-Application",
+				);
 				INFOPLIST_FILE = "Eula-Sample-Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adamCooper.Eula-Sample-Application";
@@ -302,6 +389,7 @@
 				87210B7F1D8AE15800809345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
