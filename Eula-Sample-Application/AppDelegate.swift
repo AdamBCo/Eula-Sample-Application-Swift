@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: viewController)
         self.window?.rootViewController = navigationController
         
-        ELAManager.setAPIKey("8cca992579636f56f491a33de725ef8d", apiSecret: "59035ca9eb968caeb48fbf331719f9bd")
+        ELAManager.setAPIKey("API_KEY", apiSecret: "API_SECRET")
         return true
     }
 
